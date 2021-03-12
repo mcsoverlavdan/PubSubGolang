@@ -1,5 +1,6 @@
 # PubSubGolang
-A golang program on Publish Subscribe 
+# Distributed Systems
+A simple golang program on Publish Subscribe
 
 
 # Requirements:
@@ -102,7 +103,7 @@ News subscriber displays the currently received  news from the topic “news”.
 The integer values recieved are used to plot realtime data using chart.js cdn
 Here in this case two clients (browsers) are subscribed to the topic iot,where they receive data of daily corona positive cases
 
-
+![Image of graph](https://github.com/mcsoverlavdan/PubSubGolang/blob/main/Picture3.png)
 
 # References :
 https://www.youtube.com/watch?v=yyREnTgRTQ0
