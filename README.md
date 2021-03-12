@@ -3,15 +3,18 @@ A golang program on Publish Subscribe
 
 
 # Requirements:
+```golang
 go get "github.com/gorilla/websocket"
 go get "github.com/satori/go.uuid"
+```
 
--run broker.go (open http://localhost:8000/  to view at the clients and subscribers need to refersh to 				get the latest count)
--run subscriberNews.go (open http://localhost:8080/   to view the output {topic news})
--run publisherNews.go (the news fetching part is taken from our previous assignment )
 
--run publisherIot.go
--run subscriberIot.go (open http://localhost:8081/  this will create a realtime graph of incoming 				iot or integer input {topic iot} )
+#### -run broker.go (open http://localhost:8000/  to view at the clients and subscribers need to refersh to 				get the latest count)
+#### -run subscriberNews.go (open http://localhost:8080/   to view the output {topic news})
+#### -run publisherNews.go (the news fetching part is taken from our previous assignment )
+
+#### -run publisherIot.go
+#### -run subscriberIot.go (open http://localhost:8081/  this will create a realtime graph of incoming 				iot or integer input {topic iot} )
 
 The broker.go takes in clients request,appends them to the clients slice and based on the “action “and “topic” parameters it is then appended to subscriptions slice or is used to publish data based on the topic. 
 Clients send publish and subscribe request using
